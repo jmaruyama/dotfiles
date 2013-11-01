@@ -1,0 +1,16 @@
+# --------------------
+# path setting file
+# --------------------
+# /usr/local/bin path directory
+if [ -x /usr/local/bin ]; then
+	PATH=/usr/local/bin:${PATH}
+fi
+
+# ${HOME} path directory
+for add_path in bin tools
+do
+	# 
+	if [ -x "${HOME}/" ]; then
+		PATH=${PATH}:${HOME}/${add_path}
+	fi
+done

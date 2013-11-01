@@ -1,0 +1,16 @@
+# --------------------
+# alias setting file
+# --------------------
+# ls Commands
+case "${OSTYPE}" in
+	darwin* )
+		alias ls="ls -G"
+		alias ll="ls -G -l"
+		alias la="ls -G -l -a"
+		;;
+	linux* )
+		alias ls="ls --color=auto"
+		alias ll="ls --color=auto -l"
+		alias la="ls --color=auto -l -a"
+		;;
+esac

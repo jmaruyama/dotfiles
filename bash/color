@@ -1,0 +1,23 @@
+# --------------------
+# color setting file
+# --------------------
+# constant foreground color
+declare -A COLOR_ARRAY
+export COLOR_ARRAY=(
+	["FC_BLACK"]=30
+	["FC_RED"]=31
+	["FC_GREEN"]=32
+	["FC_YELLOW"]=33
+	["FC_BLUE"]=34
+	["FC_MAGENTA"]=35
+	["FC_CYAN"]=36
+	["FC_WHITE"]=37
+	["BC_BLACK"]=40
+	["BC_RED"]=41
+	["BC_GREEN"]=42
+	["BC_YELLOW"]=43
+	["BC_BLUE"]=44
+	["BC_MAGENTA"]=45
+	["BC_CYAN"]=46
+	["BC_WHITE"]=47
+)
